@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"><b>Improof</b></string>
+    <string name="improof">Improof</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello">Hello blank fragment</string>
+    <string name="facebook_app_id">app123456</string>
+    <string name="fb_login_protocol_scheme">fb123456</string>
+    <string name="back_home">Back To Home</string>
+    <string name="for_feed">for your feedback!</string>
+    <string name="thanks"><b>Thank You</b></string>
+
+</resources>

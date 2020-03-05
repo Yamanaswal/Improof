@@ -1,0 +1,77 @@
+URL: "http://13.126.99.14/improof/index.php/api/login"
+{"app_key":"123456","email":"sachin@gmail.com","password":"1234567"}
+
+
+
+   {
+     "data": {
+       "status": 1,
+       "resCode": 1,
+       "message": "SUCCESFULL",
+       "result": {
+                    "id": 28,
+                    "c_id": 2,
+                    "name": "Sachin Tendulkar",
+                    "company_name": "Do Not Delete (Mitul)",
+                    "email": "sachin@gmail.com",
+                    "designation": "Cricketer ka  Bhagwaan",
+                    "pic_path": "member_image\/vXbE8e2OyAciK8CgXttDRSERKoi90klyy7zmu1Zk.jpeg",
+                    "evaluater": 2,
+                    "evaluated": 2,
+                    "status": 2,
+                    "skills": [
+                        {
+                        "skill_id": 10,
+                        "title": "On Time",
+                        "desc": "Being punctual is most important",
+                        "rate": 86,
+                        "count": 34
+           },
+           {
+             "skill_id": 11,
+             "title": "Hard Work",
+             "desc": "Hard work and get your aim achieved",
+             "rate": 31,
+             "count": 24
+           },
+           {
+             "skill_id": 17,
+             "title": "Positive Attitude",
+             "desc": "Positive attitude is the most important thing a person must be having.",
+             "rate": 23,
+             "count": 18
+           },
+           {
+             "skill_id": 18,
+             "title": "Communication",
+             "desc": "How to express your feelings is one of the most important thing",
+             "rate": 19,
+             "count": 15
+           },
+           {
+             "skill_id": 19,
+             "title": "Thinking Skill",
+             "desc": "Ability to think in stressed situation",
+             "rate": 44,
+             "count": 19
+           },
+           {
+             "skill_id": 32,
+             "title": "Dedication",
+             "desc": "Dedication toward your work is the key.",
+             "rate": 30,
+             "count": 20
+           },
+           {
+             "skill_id": 33,
+             "title": "Discipline",
+             "desc": "To be disciplined is the first key of success",
+             "rate": 84,
+             "count": 28
+           }
+         ]
+       }
+     }
+   }
+
+

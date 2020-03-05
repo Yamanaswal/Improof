@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.home_fragments.HomePageFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Level start -->
+        <RelativeLayout
+            android:id="@+id/relative_top_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@mipmap/home"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="40dp"
+                    android:text="Do not Delete (Default)"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/signout" />
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/placeholder_image_id"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:src="@mipmap/placeholder" />
+
+            <TextView
+                android:id="@+id/person_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeholder_image_id"
+                android:layout_centerHorizontal="true"
+                android:text="person Name here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/person_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Person position Here" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/person_designation"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+        <!-- end of top level -->
+
+        <!--middle level -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_top_id">
+
+            <RelativeLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- skills  -->
+                <RelativeLayout
+                    android:id="@+id/skills_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/coolskills_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Coolest Skills"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/coolest_skills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp" />
+
+
+                </RelativeLayout>
+                <!-- Skills  end -->
+
+                <!-- profile strength -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/evalution_cardView_id"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skills_id"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/profile_strength_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:paddingVertical="13dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/rating_number_id"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            app:cardUseCompatPadding="true">
+
+                            <TextView
+                                android:id="@+id/overall_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLength="3"
+                                android:text="4.6"
+                                android:textSize="25dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/allstar_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/rating_number_id"
+                            android:text="All Stars!"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/evalutions_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ratingbar_id"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/rating_number_id"
+                            android:text="evalutions here" />
+
+                        <RatingBar
+                            android:id="@+id/ratingbar_id"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/allstar_id"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/rating_number_id"
+                            android:progressTint="@color/duskYellow" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- profile end -->
+
+                <!-- performance -->
+                <RelativeLayout
+                    android:id="@+id/perfomance_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/evalution_cardView_id"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Skill Performance"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/performance_skills_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp" />
+
+                </RelativeLayout>
+                <!-- performance end-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+        <!-- middle level end-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

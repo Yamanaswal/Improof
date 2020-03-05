@@ -1,0 +1,36 @@
+{
+  "app_key": "123456",
+  "c_id": "2",
+  "given_by": "32",
+  "given_to": "30",
+  "rating": [
+                {
+                  "rate": "0",
+                  "skill_id": "10"
+                },
+                {
+                  "rate": "0",
+                  "skill_id": "11"
+                },
+                {
+                  "rate": "5.0",
+                  "skill_id": "17"
+                },
+                {
+                  "rate": "0",
+                  "skill_id": "18"
+                },
+                {
+                  "rate": "5.0",
+                  "skill_id": "19"
+                },
+                {
+                  "rate": "0",
+                  "skill_id": "32"
+                },
+                {
+                  "rate": "0",
+                  "skill_id": "33"
+                }
+  ]
+}

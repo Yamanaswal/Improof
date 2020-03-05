@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/skillCardId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/skillTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="9dp"
+                android:maxWidth="70dp"
+                android:maxLines="2"
+                android:text="Positive Attitude" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp">
+
+            <RatingBar
+                android:id="@+id/star_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:progressTint="@color/duskYellow"
+                android:numStars="1"
+                android:rating="1" />
+
+            <TextView
+                android:id="@+id/rateId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_rating"
+                android:paddingLeft="3dp"
+                android:paddingTop="7dp"
+                android:maxLength="4"
+                android:paddingRight="3dp"
+                android:paddingBottom="7dp"
+                android:text="5.0"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/countId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rateId"
+                android:paddingTop="10dp"
+                android:maxLength="4"
+                android:paddingBottom="7dp"
+                android:text="(11)" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+REQUEST: {"app_key":"123456","c_id":"2","given_by":"28","given_to":"5"}
+
+VOLLEY URL: "http://13.126.99.14/improof/index.php/api/member_rating_summary"
+
+ {
+  "data": {
+    "status": 1,
+    "resCode": 1,
+    "message": "SUCCESFULL",
+    "result": [
+      {
+        "skill_id": 10,
+        "c_id": 2,
+        "title": "On Time",
+        "desc": "Being punctual is most important",
+        "rate": "4.0"
+      },
+      {
+        "skill_id": 11,
+        "c_id": 2,
+        "title": "Hard Work",
+        "desc": "Hard work and get your aim achieved",
+        "rate": "3.0"
+      },
+      {
+        "skill_id": 17,
+        "c_id": 2,
+        "title": "Positive Attitude",
+        "desc": "Positive attitude is the most important thing a person must be having.",
+        "rate": "5.0"
+      },
+      {
+        "skill_id": 18,
+        "c_id": 2,
+        "title": "Communication",
+        "desc": "How to express your feelings is one of the most important thing",
+        "rate": "5.0"
+      },
+      {
+        "skill_id": 19,
+        "c_id": 2,
+        "title": "Thinking Skill",
+        "desc": "Ability to think in stressed situation",
+        "rate": "5.0"
+      },
+      {
+        "skill_id": 32,
+        "c_id": 2,
+        "title": "Dedication",
+        "desc": "Dedication toward your work is the key.",
+        "rate": "4.0"
+      },
+      {
+        "skill_id": 33,
+        "c_id": 2,
+        "title": "Discipline",
+        "desc": "To be disciplined is the first key of success",
+        "rate": "4.0"
+      }
+    ]
+  }
+}
